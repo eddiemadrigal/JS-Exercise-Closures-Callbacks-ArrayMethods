@@ -1,6 +1,6 @@
 // ⭐️ Example Challenge START ⭐️
 
-/**
+/** 
  * ### Challenge `processFirstItem`
  * 
  * @instructions

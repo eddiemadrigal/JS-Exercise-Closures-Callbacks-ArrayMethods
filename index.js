@@ -142,7 +142,7 @@ function processProduct(num1, num2, callback) {
 */
 function processContains(item, list, callback) {
   const found = list.find(element => element === item);
-  return (found ? true : false);
+  return callback(found ? true : false);
 }
 
 /**
@@ -164,8 +164,8 @@ function processContains(item, list, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, callback) {
+    return callback(list.filter((a, b) => list.indexOf(a) === b));
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
